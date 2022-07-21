@@ -1,3 +1,23 @@
+  <!-- Modal -->
+  <div class="modal fade" id="applicationModal" tabindex="-1" aria-labelledby="applicationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Training Application</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScE7p-_51BBoMQbi4ZCMMsXQK5IX3Fh2Cu4TMn_dY3w7WH9pw/viewform?embedded=true" width="640" height="1609" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <header id="header" class="border-bottom-0" data-sticky-shrink="false">
 	<div id="header-wrap">
 		<div class="container">
@@ -10,7 +30,7 @@
 				</div><!-- #logo end -->
 
 				<div class="header-misc">
-					<a class="top-phone" href=""><i class="icon-user-plus"></i> <span class="d-none d-md-inline-block">Apply</span></a>
+					<a class="top-phone" href="" data-toggle="modal" data-target="#applicationModal"><i class="icon-user-plus"></i> <span class="d-none d-md-inline-block">Apply</span></a>
 				</div>
 
 				<div id="primary-menu-trigger">
@@ -259,37 +279,24 @@
 													<div class="form-widget" data-loader="button">
 														<div class="form-result"></div>
 
-														<form class="row mb-0" name="template-contactform" action="include/form.php" method="post">
-															<div class="col-md-6 form-group">
-																<input type="text" name="template-contactform-name" value="" class="form-control required" placeholder="Name">
-															</div>
-															<div class="col-md-6 form-group">
-																<input type="email" name="template-contactform-email" value="" class="required email form-control" placeholder="Email">
-															</div>
-															<div class="col-md-6 form-group">
-																<input type="text" name="subject" value="" class="required form-control" placeholder="Subject">
-															</div>
-															<div class="col-md-6 form-group">
-																<input type="text" name="template-contactform-phone" value="" class="form-control" placeholder="Phone">
-															</div>
-
-															<div class="w-100"></div>
-
-															<div class="col-12 form-group">
-																<textarea class="required form-control" name="template-contactform-message" rows="3" cols="30" placeholder="Enter your Message"></textarea>
-															</div>
-
-															<div class="col-12 form-group d-none">
-																<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="form-control">
-															</div>
-
-															<div class="col-12 form-group invisible">
-																<button class="button button-3d button-small m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
-															</div>
-
-															<input type="hidden" name="prefix" value="template-contactform-">
-
-														</form>
+														<div class="container">
+															<form target="_blank" action="https://formsubmit.co/edabad1814f51b05120c565069b35a97" method="POST">
+															  <div class="form-group">
+																<div class="form-row">
+																  <div class="col">
+																	<input type="text" name="name" class="form-control" placeholder="Full Name" required>
+																  </div>
+																  <div class="col">
+																	<input type="email" name="email" class="form-control" placeholder="Email Address" required>
+																  </div>
+																</div>
+															  </div>
+															  <div class="form-group">
+																<textarea placeholder="Your Message" class="form-control" name="message" rows="5" required></textarea>
+															  </div>
+															  <button type="submit" class="btn btn-lg btn-success btn-block">Submit Form</button>
+															</form>
+														  </div>
 													</div>
 												</div>
 											</li>

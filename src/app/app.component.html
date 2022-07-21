@@ -1,3 +1,66 @@
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Application Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfzLghxz9I6XaCA_F4oEJBcN8OsfrVtWiqYZkHztmxCbcL57g/viewform?embedded=true" width="640" height="853" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <h1>Talk To Us</h1>
+                    <form target="_blank" action="https://formsubmit.co/edabad1814f51b05120c565069b35a97" method="POST">
+                      <div class="form-group">
+                        <div class="form-row">
+                          <div class="col">
+                            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                          </div>
+                          <div class="col">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                    </form>
+                  </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+
 <app-header></app-header>
 
 <section id="content">
@@ -81,7 +144,7 @@
                         </div>
                     </div>
                     <div class="col-12 text-center">
-                        <h4 class="text-primary topmargin">We want you to <strong>succeed.</strong> &nbsp;&nbsp;<a class="btn bg-green button button-large text-white">Apply Today</a></h4>
+                        <h4 class="text-primary topmargin">We want you to <strong>succeed.</strong> &nbsp;&nbsp;<a class="btn bg-green button button-large text-white" data-toggle="modal" data-target="#exampleModal">Apply Today</a></h4>
                     </div>
                 </div>
             </div>
@@ -231,7 +294,7 @@
                         <p class="text-white text-larger">
                             At Harmony Innovation Hub, we constantly seek out individuals or teams with good ideas that can potentially solve challenges in Nigeria and beyond and make it our mission to help them see their vision through.
                         </p>
-                        <a href="#" class="button button-rounded button-xlarge m-0 nott font-weight-semibold ls0 px-5">Talk to us</a>
+                        <a href="#" class="button button-rounded button-xlarge m-0 nott font-weight-semibold ls0 px-5" data-toggle="modal" data-target="#contactModal">Talk to us</a>
                     </div>
                 </div>
             </div>
