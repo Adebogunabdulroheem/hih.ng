@@ -12238,7 +12238,7 @@ blockquote.float-right {
 
 .flip-card-back { background-color: #666; }
 
-.flip-card:hover .flip-card-front,
+/* .flip-card:hover .flip-card-front,
 .flip-card:hover .flip-card-back {
 	-webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
 	transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -12246,7 +12246,7 @@ blockquote.float-right {
 	transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
 	transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
 	-webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-}
+} */
 
 .flip-card-front.no-after::after,
 .flip-card-back.no-after::after { content: none }
@@ -12298,42 +12298,42 @@ blockquote.float-right {
 	transform-style: preserve-3d;
 }
 
-.flip-card-front,
+/* .flip-card-front,
 .flip-card:hover .flip-card-back {
 	-webkit-transform: rotateY(0deg);
 	transform: rotateY(0deg);
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-}
+} */
 
-.flip-card:hover .flip-card-front {
+/* .flip-card:hover .flip-card-front {
 	-webkit-transform: rotateY(-180deg);
 	transform: rotateY(-180deg);
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-}
+} */
 
-.top-to-bottom .flip-card-back {
+/* .top-to-bottom .flip-card-back {
 	-webkit-transform: rotateX(180deg);
 	transform: rotateX(180deg);
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-}
+} */
 
-.top-to-bottom .flip-card-front,
+/* .top-to-bottom .flip-card-front,
 .top-to-bottom:hover .flip-card-back {
 	-webkit-transform: rotateX(0deg);
 	transform: rotateX(0deg);
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-}
+} */
 
-.top-to-bottom:hover .flip-card-front {
+/* .top-to-bottom:hover .flip-card-front {
 	-webkit-transform: rotateX(-180deg);
 	transform: rotateX(-180deg);
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-}
+} */
 
 .flip-card-inner span {
 	font-size: 18px;
